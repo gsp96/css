@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>background-size</title>
+<style>
+	div{
+		background-image: url('../img/leaf.jpg');
+		border: 0.1rem solid;
+		width: 10rem;
+		height: 10rem;
+		margin: 1rem;
+		float: left;
+	}
+	
+	#one {
+		background-size: contain;/*background image가 배경을 꽉채울만큼 width height를 조정하여 확대한다.*/
+		background-repeat: no-repeat;
+	}
+	
+	#two {
+		background-size: cover;/*부모객체를 초과해서 배경을 채운다.*/
+	}
+	
+	#three {
+		background-size: 7rem 7rem;/*image한개의 width height를 조정해준다.*/
+		background-repeat: no-repeat;
+	}
+	
+	#four {
+		background-size: 50% 50%;/*부모객체가 기준이 된다. 여기서는 기본값은 borderbox의 크기. 부모객체의 width 50% height 50%*/
+		background-repeat: no-repeat;
+	}
+</style>
+</head>
+<body>
+	<div>hello</div>
+	<div id='one'>contain</div>
+	<div id='two'>cover</div>
+	<div id='three'>7rem 7rem</div>
+	<div id='four'>50% 50%</div>
+</body>
+</html>

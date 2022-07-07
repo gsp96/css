@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>display</title>
+<style>
+	ul.inline li{
+		display: inline; /*content의 크기에 딱 맞춰서 정해져 버린다.*/
+		width: 10rem;/*display:inline일때 width값은 형식상으로는 적용이 되지만 화면상으로는 무시된다.*/
+		height: 3rem;
+		background: red;
+	}
+	
+	ul.block li{
+		display: inline-block;
+		width: 10rem;
+		height: 3rem;
+	}
+	
+	ul.none li{
+		display: none;
+	}
+</style>
+</head>
+<body>
+	<ul>
+		<li>사과</li>
+		<li>딸기</li>
+	</ul>
+	<ul class='inline'>
+		<li>사과</li>
+		<li>딸기</li>
+	</ul>
+	<ul class='inline block'>
+		<li>사과</li>
+		<li>딸기</li>
+	</ul>
+	<ul class='none'>
+		<li>사과</li>
+		<li>딸기</li>
+	</ul>
+</body>
+</html>

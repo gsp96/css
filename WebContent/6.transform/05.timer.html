@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>timer</title>
+<style>
+	#wrap div{
+		width: 5rem;
+		height: 3rem;
+		padding: 0.3rem;
+		margin: 0.3rem 1.7rem; /*top-bottom값, left-right값이다.*/
+		border-radius: 0.3rem;
+		background: blue;
+		color: white;
+		text-align: center;
+		font-weight: bold;
+		float: left;
+		transition-duration: 3s;
+	}
+	
+	#wrap:hover div {
+		height: 20rem;
+	}
+	
+	.linear {
+		transition: linear;/*애니메이션 속도가 일정한 속성값*/
+	}
+	
+	.ease {
+		transition: ease; /*점점빨라지다가 끝으로 갈수록 느려지는 애니메이션 속도, 기본값*/
+	}
+	
+	.ease-in {
+		transition: ease-in;
+	}
+	
+	.ease-out{
+		transition: ease-out;
+	}
+</style>
+</head>
+<body>
+	<div id='wrap'>
+		<div class='linear'>linear</div>
+		<div class='ease'>ease</div>
+		<div class='ease-in'>ease-in</div>	
+		<div class='ease-out'>ease-out</div>
+	</div>
+</body>
+</html>

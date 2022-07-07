@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>background-clip</title>
+<style>
+	div {
+		background-color:yellow;
+		width: 7rem;
+		height: 7rem;
+		border: 0.5rem dotted;
+		padding: 1rem;
+		margin: 1rem;
+	}
+	
+	#one{
+		background-clip: border-box;/*기본값*/
+	}
+	
+	#two{
+		background-clip: padding-box;
+	}
+	
+	#three {
+		background-clip: content-box;
+	}
+</style>
+</head>
+<body>
+	<div id='one'></div>
+	<div id='two'></div>
+	<div id='three'></div>
+</body>
+</html>

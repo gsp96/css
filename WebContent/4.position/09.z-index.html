@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>z-index</title>
+<style>
+	div {
+		padding: 3rem;
+		margin: 1rem;
+		position: fixed;
+	}
+	
+	.one {
+		background: red;
+		left: 1rem;
+		top: 1rem;
+		z-index: 3;
+	}
+	
+	.two{
+		background: orange;
+		left: 2rem;
+		top: 2rem;
+		z-index: 1;
+	}
+	
+	.three{
+		background: green;
+		left: 3rem;
+		top: 3rem;
+		z-index: 2;
+	}
+</style>
+</head>
+<body>
+	<div class='one'></div>
+	<div class='two'></div>
+	<div class='three'></div>
+	 <!--클래스명은 중복되도 상관없다. id는 중복되면 안된다.  -->
+</body>
+</html>

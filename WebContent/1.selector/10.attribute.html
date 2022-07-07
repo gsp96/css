@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>attribute selector</title>
+	<style>
+		a[target] {
+			border: 0.1rem solid;
+		}
+		a[href='fire.html'] {/*href에'fire.html'라는 문자가 있는것*/
+			text-decoration: none;
+		}
+		a[class~='best']{/*best단어가 포함되있는것*/
+			background:yellow;
+		}
+		a[class |='best'] {/*best접두사로시작하는것*/
+			border: 0.1rem dotted;
+		}
+		a[class^='best'] {/*best라는 글자로 시작하면*/
+			background: lightgreen;
+		}
+		a[class $='best'] {/*best라는 글자로 끝나면*/
+			background: pink;
+		}
+		a [class *='best']{
+			background: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href='tree.html' target='_blank'>목</a></li>
+		<li><a href='fire.html'>화</a></li>
+		<li><a class='my best choice'>토</a></li>
+		<li><a class='best-choice'>금</a></li>
+		<li><a class='mybest'>수</a></li>
+	</ul>
+</body>
+</html>
